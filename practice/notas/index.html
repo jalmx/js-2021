@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        *{
+            text-transform: capitalize;
+        }
+    </style>
 </head>
 <body>
     <h1>Notas</h1>
     <form>
+        <div>
+            <label for="input-title">
+                Titulo de la nota
+                <br>
+                <input type="text" placeholder="Titulo de la nota" id="input-title">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="input-img">
+                URL de la imagen
+                <br>
+                <input type="url" placeholder="URL de la imagen" id="input-img">
+            </label>
+        </div>
+        <br>
         <div>
             <label for="ta-note">
                 <textarea name="" id="ta-note" cols="30" rows="10" placeholder="Recordatorio sobre ..."></textarea>
@@ -20,10 +42,13 @@
     </form>
     <hr>
     <main id="container-note">
-        <section id="note-1">
+        <!-- <section id="note-1">
+            <h2>Titulo de la nota</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt illum minima voluptatibus esse totam iusto, impedit veniam ipsum facilis ipsam alias eius sed, dolore enim officia quam sapiente omnis.</p>
+            <img src="https://raw.githubusercontent.com/jalmx/mecatronica85/master/imgs/lg_85.jpg" alt="" width="20%">
+            <h5>Fecha</h5>
             <hr>
-        </section>
+        </section> -->
     </main>
     <script src="notas.js"></script>
 </body>
