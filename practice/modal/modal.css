@@ -1,41 +1,50 @@
-body{
-    overflow: hidden;
-    background: wheat;
-    width: 100%;
-    height: 100vh;
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.modal{
-    color: white;
-    background-color: skyblue;
-    width: 80%;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-    height: auto;
-    border: 1px solid white;
-    box-shadow: 3px 3px 3px 5px gray;
-    position: fixed;
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    transform: translate(50%,50%);
-    z-index: 1;
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
-.modal a{
-    padding: .5rem;
-    text-decoration: none;
-    color: black;
-    border: 1px solid white;
-    border-radius: 10px;
+.modal div {
+  color: white;
+  background-color: skyblue;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid white;
+  box-shadow: 3px 3px 3px 5px gray;
+  z-index: 100;
+  transition: all 0.3s;
 }
 
-.modal a:hover{
-    background: white;
-    color: skyblue;
+.modal p {
+  padding: 1rem;
+}
+.modal a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-.hidden{
-    display: none !important;
+.modal a:hover {
+  background: white;
+  color: skyblue;
+}
+
+.hidden {
+  display: none !important;
 }
