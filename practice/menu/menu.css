@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: skyblue;
+}
+
+nav > ul{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+li > a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+}
+
+a:hover{
+    background-color: steelblue;
+    display: block;
+    padding: .3rem; 
+    border-radius: 10px;
+}
+
+@media screen and (max-width:600px) {
+    nav > ul{
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    
+}

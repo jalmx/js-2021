@@ -1,7 +1,5 @@
-
 ; (
     function (d) {
-        
         const path = './photos/'
         const photosPath = [
             `${path}photo_1.jpg`,
@@ -13,10 +11,10 @@
         let i = 0
 
         setInterval(function () {
-            const header = d.getElementById('header')
+            const img = d.getElementsByTagName('img')[0]
 
             console.log(photosPath[i]);
-            header.style.backgroundImage = `url(${photosPath[i]})`
+            img.src = photosPath[i]
             i++
 
             if (i >= photosPath.length) {

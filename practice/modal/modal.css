@@ -27,6 +27,7 @@ body,
   box-shadow: 3px 3px 3px 5px gray;
   z-index: 100;
   transition: all 0.3s;
+  width: 80%;
 }
 
 .modal p {
@@ -38,6 +39,7 @@ body,
   color: black;
   border: 1px solid white;
   border-radius: 10px;
+  
 }
 
 .modal a:hover {
