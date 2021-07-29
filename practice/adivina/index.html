@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="adivina.css">
+</head>
+<body>
+    <h1 class="title">Adivina el numero</h1>
+    <div>
+        <hr>
+        <br>
+        <h2>Configuracion</h2>
+        <div>
+            <label for="">Numero minimo</label>
+            <input type="number" name="" id="minimo" min="1" placeholder="1" value="1">
+        </div>
+        <div>
+            <label for="">Numero maximo</label>
+            <input type="number" name="" id="maximo" value="10" placeholder="10" >
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="answer">
+        <label for="">Ingresa el valor</label>
+        <br>
+        <input type="number" id="respuesta" placeholder="5"> 
+        <div>
+            <button>Responder</button>
+            <button>Reiniciar</button>
+        </div>
+        <div>
+            <h2 id="intentos">Intentos: 0</h2>
+        </div>
+    </div>
+
+    <div class="reaccion">
+        <h1 class="emoji">😁 Adivina</h1>
+        <h1 class="emoji hidden" >😵 Loser</h1>
+        <h1 class="emoji hidden" >Ganaste 🎉🎉🎉</h1>
+    </div>
+    
+    <script src="./adivina.js"></script>
+</body>
+</html>
