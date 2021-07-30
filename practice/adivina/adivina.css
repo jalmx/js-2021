@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #eee;
+}
 .title{
     text-align: center;
     font-size: 4.5rem;
@@ -28,8 +31,4 @@
 .emoji{
     text-align: center;
     font-size: 4rem;
-}
-
-.hidden{
-    display: none;
 }
